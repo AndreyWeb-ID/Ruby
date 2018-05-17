@@ -30,5 +30,4 @@ else d < 0
 puts "D = #{d}"
 puts "No roots"
 
-puts "fgffg"
 end
