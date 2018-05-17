@@ -1,10 +1,10 @@
-print "Put your first name: "
+print "Ваш имя: "
 name = gets.chomp
-print "Put your height: "
+print "Ваш рост: "
 height = Float(gets.chomp)
 weight = height - 110
 if weight < 0
-puts "Your weight are optimal, yet!"
+puts "Ваш вес уже оптимален!"
 else
-puts "#{name}, your weight: #{weight}"
+puts "#{name}, Ваш вес: #{weight}"
 end

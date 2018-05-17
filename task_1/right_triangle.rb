@@ -1,28 +1,28 @@
-print "Enter first side of triangle"
+print "Введите длину первой стороны треугольника"
 a = Float(gets.chomp)
-print "Enter second side of triangle"
+print "Введите длину второй стороны треугольника"
 b = Float(gets.chomp)
-print "Enter third side of triangle"
+print "Введите длину третьей стороны треугольника"
 c = Float(gets.chomp)
 
 
 if a == b && a == c
-puts "Ravnostoronny"
+puts "Треугольник равносторонний"
 end
 
 if a**2 == (b**2 + c**2)
-puts "Pramoy"
+puts "Треугольник прямой"
 elsif b**2 == (a**2 + c**2)
-puts "Pramoy2"
+puts "Треугольник прямой"
 elsif c**2 == (b**2 + a**2)
-puts "Pramoy3"
+puts "Треугольник прямой"
 else
-puts "Ne pramoy"
+puts "Треугольник не является прямым"
 end
 
 
 if a == b || a == c || b == c
-puts "Ravnobedrenny"
+puts "Треугольник равнобедренный"
 end
 
 

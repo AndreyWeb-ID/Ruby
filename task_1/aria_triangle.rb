@@ -1,6 +1,6 @@
-print "Enter height of triangle: "
+print "Введите высоту треугольника: "
 height = Float(gets.chomp)
-print "Enter the base of triangle: "
+print "Введите основание треугольника: "
 base = Float(gets.chomp)
 s = 0.5*height*base
-puts "Aria of triangle: #{s}"
+puts "Площадь треугольника равна #{s}"

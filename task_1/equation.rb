@@ -1,8 +1,8 @@
-print "Enter a: "
+print "Введите a: "
 a = Float(gets.chomp)
-print "Enter b: "
+print "Введите b: "
 b = Float(gets.chomp)
-print "Enter c: "
+print "Введите c: "
 c = Float(gets.chomp)
 
 d=b**2-4*a*c
@@ -28,6 +28,6 @@ puts "x1 = x2 = #{x}"
 else d < 0
 
 puts "D = #{d}"
-puts "No roots"
+puts "Нет корней"
 
 end
