@@ -1,4 +1,4 @@
-print "Ваш имя: "
+print "Ваше имя: "
 name = gets.chomp
 print "Ваш рост: "
 height = Float(gets.chomp)
