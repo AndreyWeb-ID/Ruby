@@ -1,10 +1,5 @@
 alphabet = ('a'..'z').to_a
-numbers_of_vowel = [1, 5, 9, 15, 21, 25]
+vowels = ['a', 'e', 'i', 'o', 'u', 'y']
 letters_hash = {}
-index = 0
-numbers_of_vowel.each do |element|
-  letters_hash[alphabet[element - 1]] = numbers_of_vowel[index]
-  index += 1
-end
+vowels.each {|element| letters_hash[element] = alphabet.index(element) + 1}
 puts letters_hash
-

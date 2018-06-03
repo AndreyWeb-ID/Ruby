@@ -5,4 +5,3 @@ while count <= 100
   count += 5
 end
 puts arr_numbers
-
