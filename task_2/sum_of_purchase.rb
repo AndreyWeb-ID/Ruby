@@ -1,6 +1,4 @@
 products = {}
-cost_count = {}
-total_sum = 0
 loop do
   print "Введите название товара: "
   name = gets.chomp
@@ -9,10 +7,13 @@ loop do
   cost = gets.to_f
   print "Количество: "
   count = gets.to_f
-  cost_count[cost] = count
-  products[name] = cost_count.assoc(cost)
-  puts "Итоговая сумма за товар #{name} составляет: #{cost * count}"
-  total_sum += cost * count
+  products[name] = { cost => count }
 end
-puts products
-puts "Итоговая сумма всех покупок составляет: #{total_sum}"
+total_sum = 0
+products.each do |name, cost_count|
+  cost_count.each do |cost, count|
+    puts "Итоговая сумма за товар #{name} составляет: #{cost * count}"
+    total_sum += cost * count
+  end
+end
+puts "Итоговая сумма за все товары составляет: #{total_sum}"

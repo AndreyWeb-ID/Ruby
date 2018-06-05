@@ -12,4 +12,4 @@ months = {
   November: 30,
   December: 31
 }
-months.each {|key, value| puts key if value == 30}
+months.each { |month, day| puts month if day == 30 }
